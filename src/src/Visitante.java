@@ -1,13 +1,15 @@
 package src;
 
+import java.util.Scanner;
+
 public class Visitante extends Pessoa{
 
 	private String numeroCracha;
 	private Funcionario funcResp;
 
 	public Visitante() {
-
 		super();
+		Scanner scan = new Scanner(System.in);
 		System.out.println("===== Dados do Visitante =====");
 		System.out.println("Informe o numero do crachá: ");
 		this.numeroCracha = scan.nextLine();
@@ -18,6 +20,7 @@ public class Visitante extends Pessoa{
 		System.out.println("Visitante cadastrado: " + super.getNome() + " " + super.getSobreNome() + ".");
 		System.out.println("Crachá: " + this.numeroCracha);
 		
+		scan.close();
 	}
 
 	public String getNumeroCracha() {

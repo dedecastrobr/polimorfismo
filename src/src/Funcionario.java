@@ -1,5 +1,7 @@
 package src;
 
+import java.util.Scanner;
+
 public class Funcionario extends Pessoa {
 	
 	public static enum Cargo { DIRETOR, SUPERVISOR, AUXILIAR};
@@ -9,6 +11,7 @@ public class Funcionario extends Pessoa {
 
 	public Funcionario() {
 		super();
+		Scanner scan = new Scanner(System.in);
 		System.out.println("===== Dados do funcionario =====");
 		System.out.println("Informe a matricula: ");
 		this.matricula = scan.nextLine();

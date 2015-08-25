@@ -7,8 +7,10 @@ public class ControleAcesso{
 	public static final ArrayList<Pessoa> listaPessoas = new ArrayList<Pessoa>();
 	
 	private static final String[] menuOpcoes = {"1 - Cadastrar Funcionario \n", 
-												"2 - Cadastrar Visitante \n", 
-												"3 - Listar Pessoas \n", 
+												"2 - Cadastrar Visitante \n",
+												"3 - Cadastrar Setor \n",
+												"4 - Liberar Acesso \n",
+												"5 - Listar Pessoas \n", 
 												"9 - Sair \n"};
 	
 	private static Scanner scan = new Scanner(System.in);

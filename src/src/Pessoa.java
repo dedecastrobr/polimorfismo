@@ -6,10 +6,9 @@ public class Pessoa {
 	private String nome;
 	private String sobreNome;
 	private String cpf;
-	protected Scanner scan = new Scanner(System.in);
-
 	
 	public Pessoa() {
+		Scanner scan = new Scanner(System.in);
 		System.out.println("===== Dados da pessoa =====");
 		System.out.println("Informe o nome: ");
 		this.nome = scan.nextLine();
@@ -19,6 +18,7 @@ public class Pessoa {
 		
 		System.out.println("Informe o CPF: ");
 		this.cpf = scan.nextLine();	
+		scan.close();		
 	}
 	
 	public String getNome() {
@@ -39,5 +39,10 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+	
+	public void temAcesso(){
+		System.out.println("Pessoa sem credendial!");
+	}
+	
 
 }
